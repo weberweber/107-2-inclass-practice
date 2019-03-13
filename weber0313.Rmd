@@ -9,3 +9,12 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+2 -> a
+b <- 3
+```
+
+```{r}
+65+b
+```
+
