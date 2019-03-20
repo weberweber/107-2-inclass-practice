@@ -38,3 +38,13 @@ levels(studentMajors)
 as.integer(studentMajors)
 ```
 
+```{r}
+hometown <- factor(
+  c("台中","台北","台北","台中","台北")
+)
+typeof(hometown)
+levels(hometown)
+class(hometown)
+as.integer(hometown)
+```
+
