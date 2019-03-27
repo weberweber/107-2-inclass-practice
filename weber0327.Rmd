@@ -63,3 +63,13 @@ LisbonDateTime <- with_tz(twDateTime,tzone="Europe/Lisbon")
 twDateTime
 ```
 
+```{r}
+twDateTime <- ymd("2018-09-11", tz="Asia/Taipei")
+twDateTime
+```
+
+```{r}
+twDateTime2 <- mdy("March 3, 2019", tz="Asia/Taipei")
+twDateTime2
+```
+
