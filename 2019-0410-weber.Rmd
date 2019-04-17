@@ -1,7 +1,7 @@
 ---
-title: "weber0327èª²å ‚ç·´ç¿’"
+title: "weber0327èª²å?‚ç·´ç¿?"
 author: "weber"
-date: "2019å¹´3æœˆ27æ—¥"
+date: "2019å¹?3???27?—¥"
 output: html_document
 ---
 ```{r}
@@ -110,8 +110,8 @@ x <- 5
 y <- 7
 x2 <- c(1,5,10)
 y2 <- c(-1,5,20)
-x3 <- c("å°æ˜Ž","å°èŠ±")
-y3 <- c("å°æ˜Ž","å°è¯")
+x3 <- c("å°æ??","å°èŠ±")
+y3 <- c("å°æ??","å°è¯")
 
 x2==y2
 ```
@@ -124,8 +124,8 @@ x4 %in% y4
 ```
 
 ```{r}
-x5 <- c("å°åŒ—å¸‚","æ–°åŒ—å¸‚","é«˜é›„å¸‚")
-y5 <- c("å°åŒ—å¸‚","æ–°åŒ—å¸‚")
+x5 <- c("?°??—å??","?–°??—å??","é«˜é?„å??")
+y5 <- c("?°??—å??","?–°??—å??")
 
 x5 %in% y5
 ```
@@ -151,17 +151,17 @@ library(stringr)
 ```
 
 ```{r}
-course <- c("å€‹é«”ç¶“æ¿Ÿå­¸","æŠ•è³‡å­¸","ç¸½é«”ç¶“æ¿Ÿå­¸")
+course <- c("?€‹é?”ç?“æ?Ÿå­¸","??•è?‡å­¸","ç¸½é?”ç?“æ?Ÿå­¸")
 
 ```
 
 ```{r}
-str_subset(course,"ç¶“æ¿Ÿå­¸")
+str_subset(course,"ç¶“æ?Ÿå­¸")
 ```
 
 
 ```{r}
-str_detect(course,"ç¶“æ¿Ÿå­¸")
+str_detect(course,"ç¶“æ?Ÿå­¸")
 ```
 
 
@@ -178,8 +178,8 @@ day <- c("11","5","7")
 ```
 
 ```{r}
-char1 <- c("æœˆ","æœˆ","æœˆ")
-char2 <- c("æ—¥","æ—¥","æ—¥")
+char1 <- c("???","???","???")
+char2 <- c("?—¥","?—¥","?—¥")
 month
 char1
 day 
@@ -200,7 +200,7 @@ str_split(dates,"-")
 
 ```{r}
 dates
-str_replace(dates,"-","æœˆ")
+str_replace(dates,"-","???")
 ```
 
 ```{r}
@@ -218,6 +218,15 @@ reponame <- githubData$`GitHub repo name`[11:16]
 ```
 
 ```{r}
+plasticContainer <- list(
+  greenBox=c("paper","scissor"),     # location 1
+  redBox=c(1,3,2.5),               # location 2
+  blueBox=c(TRUE,FALSE,TRUE,TRUE)    # location 3
+)
+```
 
+```{r}
+plasticContainer[["greenBox"]] 
+plasticContainer[[1]]
 ```
 
