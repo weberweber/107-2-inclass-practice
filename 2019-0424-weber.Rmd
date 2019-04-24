@@ -392,3 +392,22 @@ m
 tolower(m)
 ```
 
+```{r}
+matObj1
+matObj1[3,2] 
+matObj1[c(F,F,TRUE,F,F),c(F,TRUE,F)]
+```
+
+```{r}
+matObj1[c(T,F,F,T,F),c(F,T,T)]
+```
+
+```{r}
+library(readr)
+classSurvey <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/classSurvey.csv")
+```
+
+```{r}
+classSurvey[c(1:60),c(4,5)]
+```
+
