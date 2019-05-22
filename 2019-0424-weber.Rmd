@@ -443,3 +443,16 @@ tp <- with_tz(ny,tz="成Asia/Taipei")
 }
 ```
 
+```{r}
+date_convert_twYM <- function(twdate, day=01){
+  yyyy<-as.integer(str_extract(twdate,"(?<=(民國))[:digit:]+"))+1911 
+  mm<-str_extract(twdate,"[:digit:]+(?=月)")
+  yyyymmdd <- ymd(str_c(yyyy,mm,day,sep="-"))
+
+  return(yyyymmdd)
+}
+
+date_convert_twYM("民國108年5月")
+date_convert_twYM(twDates, 04)
+```
+
