@@ -462,3 +462,45 @@ browseURL("https://bookdown.org/tpemartin/ntpu-programming-for-data-science/func
 textbookURL()
 ```
 
+```{r}
+demand_supply_fun <- function(P,a,b,c,d){
+  Qs=a-b*P
+Qd=c-d*P
+
+return(list(供給量=Qs,
+    需求量=Qd,
+    超額供給量=es))
+}
+
+```
+```{r}
+library(readr)
+transcriptDataFinal <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/transcriptDataFinal.csv")
+```
+
+```{r}
+
+gpa_fun <- function(studentID){
+  
+  transcriptDataFinal$學號==studentID -> logiChosenStudent
+  
+  subSample <- transcriptDataFinal[logiChosenStudent,]
+  
+  sum(subSample$學期成績*subSample$學分數)/
+    sum(subSample$學分數) -> GPA
+  return(GPA)
+}
+```
+```{r}
+gpa_fun <- function(studentID){
+  if(studentID %in% transcriptDataFinal$學號){
+  transcriptDataFinal$學號==studentID -> logiChosenStudent
+  subSample <- transcriptDataFinal[logiChosenStudent,]
+  sum(subSample$學期成績*subSample$學分數)/
+    sum(subSample$學分數) -> GPA
+  return(GPA)
+  } else {message("查無此學號")
+  }
+}
+```
+
