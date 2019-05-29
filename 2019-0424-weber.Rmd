@@ -456,3 +456,9 @@ date_convert_twYM("民國108年5月")
 date_convert_twYM(twDates, 04)
 ```
 
+```{r}
+textbookURL<-function(){
+browseURL("https://bookdown.org/tpemartin/ntpu-programming-for-data-science/function-and-conditional-execution.html#section-8.1")}
+textbookURL()
+```
+
