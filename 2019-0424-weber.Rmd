@@ -504,3 +504,9 @@ gpa_fun <- function(studentID){
 }
 ```
 
+```{r}
+for(i in seq_along(studentIds5)){
+  print(studentIds5[[i]])
+}
+```
+
